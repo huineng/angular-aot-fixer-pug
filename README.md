@@ -8,7 +8,7 @@ ngc works fine if the `template` metadata is defined for a @Component but when y
 it fails.
 
 ```
-import tpl from "./this-component.pug";
+import { tpl } from "./this-component.pug";
 
 @Component({
   template: tpl
@@ -35,4 +35,3 @@ Usage:
 ```
 node_modules/.bin/ngc-fixer-pug --src-path src
 ```
-

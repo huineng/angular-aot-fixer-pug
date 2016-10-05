@@ -10,7 +10,7 @@ program
     'version    : ' + require("../package.json").version + '\n' +
     'pug version: ' + require('pug/package.json').version
   )
-  .option('-s, --src-path [path]','path where .ts files are located', 'src')
+  .option('-s, --src-path [path]','path where .pug files are located. Searched recursivly.', 'src')
   .parse(process.argv);
 
 fixer({
