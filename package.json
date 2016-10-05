@@ -1,0 +1,20 @@
+{
+  "name": "angular-aot-fixer-pug",
+  "author": {
+    "name": "Team Sofa"
+  },
+  "bin" : { 
+    "ngc-fixer-pug" : "./bin/cli.js" 
+  },
+  "dependencies": {
+    "pug-lexer": "^2.3.0",
+    "pug-parser": "^2.0.1",
+    "pug-source-gen": "^0.0.2",
+    "commander": "^2.9.0",
+    "glob": "^7.1.0"
+  },
+  "description": "webpack (pre-)loader to add angular2 like css scopes in a static way",
+  "homepage": "https://github.com/thenoseman/angular-aot-fixer-pug#readme",
+  "license": "MIT",
+  "version": "0.0.1"
+}
