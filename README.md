@@ -3,7 +3,6 @@ Angular AOT Fixer : PUG
 
 This package tries to fix the ng2 AOT compiler behaviour that expect the template of a `@Component` to be a string.
 
-
 ngc works fine if the `template` metadata is defined for a @Component but when you want to use `.pug` files for your templates
 it fails.
 
@@ -28,10 +27,10 @@ It must be run before doing a `ngc` build.
 The compiler will then be able to resolve the `.pug` import as a string (The content is exposed as a export named `tpl`!)
 
 In the above example a file called `./this-component.pug.ts` will be generated. 
-You may safely `.gitignore` *.pug.ts files since you'll only need them for `ngc`.
+You may safely add `*.pug.ts` files to your `.gitignore` since you'll only need them for the AOT compiler run.
 
 Usage:
 ------
 ```
-node_modules/.bin/ngc-fixer-pug --src-path src
+node_modules/.bin/ng2-aot-fixer-pug --src-path src
 ```
