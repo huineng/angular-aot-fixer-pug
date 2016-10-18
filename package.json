@@ -13,6 +13,10 @@
     "pug-parser": "^2.0.1",
     "pug-source-gen": "^0.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thenoseman/angular-aot-fixer-pug.git"
+  }
   "description": "A small tool to generate typescript files from .pug template files. Useful for ng2 devlopment",
   "homepage": "https://github.com/thenoseman/angular-aot-fixer-pug#readme",
   "license": "MIT",
