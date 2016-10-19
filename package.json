@@ -9,9 +9,13 @@
   "dependencies": {
     "commander": "^2.9.0",
     "glob": "^7.1.0",
+    "pug-code-gen": "^1.1.0",
     "pug-lexer": "^2.3.0",
     "pug-parser": "^2.0.1",
-    "pug-source-gen": "^0.0.2"
+    "pug-runtime": "^2.0.2",
+    "pug-source-gen": "^0.0.2",
+    "pug-walk": "^1.0.0",
+    "shorthash": "^0.0.2"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,5 @@
   "description": "A small tool to generate typescript files from .pug template files. Useful for ng2 devlopment",
   "homepage": "https://github.com/thenoseman/angular-aot-fixer-pug#readme",
   "license": "MIT",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

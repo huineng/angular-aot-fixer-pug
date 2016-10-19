@@ -7,12 +7,13 @@ var fixer = require('../lib/fixer.js');
 
 program
   .version(
-    'version    : ' + require("../package.json").version + '\n' +
-    'pug version: ' + require('pug/package.json').version
+    'version    : ' + require("../package.json").version
   )
   .option('-s, --src-path [path]','path where .pug files are located. Searched recursivly.', 'src')
+  .option('-l, --local-scope','Add a filename based _ngcontent attribute to all tags. See "local-scoped-scss-with-pug-loader" package.', false)
   .parse(process.argv);
 
 fixer({
-  srcPath: program.srcPath
+  srcPath: program.srcPath,
+  localScope: program.localScope
 });
